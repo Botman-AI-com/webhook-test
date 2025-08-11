@@ -1,0 +1,18 @@
+#!/usr/bin/env python3
+'''
+Archivo de prueba para webhook
+'''
+
+class WebhookTester:
+    def __init__(self):
+        self.name = "Webhook Test"
+        self.version = "1.0"
+    
+    def test_commit(self):
+        '''Simula cambios para activar webhook'''
+        print(f"Testing webhook: {self.name} v{self.version}")
+        return True
+
+if __name__ == "__main__":
+    tester = WebhookTester()
+    tester.test_commit()
